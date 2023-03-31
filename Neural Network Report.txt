@@ -1,21 +1,68 @@
-Neural Network Report
+﻿Neural Network Report
+
 
 Overview of the analysis: 
 
-The nonprofit foundation Aabet Soup wanted a tool to help them select applicants for funding. They need a binary classifer to predict whether applicants will be successful if funded by alphabet soup.
+
+The nonprofit foundation Alphabet Soup wanted a tool to help them select applicants for funding. They need a binary classifier to predict whether applicants will succeed if alphabet soup funds them.
+
 
 Results: Using bulleted lists and images to support your answers, address the following questions.
 
+
 Data Preprocessing
 
-What variable(s) are the target(s) for your model? the two original variables in the model that we targeted were classification and Application Type. In the final optimization code however, we used name and classification.
+
+What variable(s) are the target(s) for your model? 
+    *This data frame with columns for EIN, Name, Application type, classification, use case, organization, status, income amount, special considerations, ask amount, and if it is successful.
+We want to predict if applicants will succeed from this data. 
+  
+
+
+
 What variable(s) are the features for your model?
-What variable(s) should be removed from the input data because they are neither targets nor features?
+    * the two original variables in the model that we targeted were classification and Application Type. In the final optimization code, however, we used name and classification.
+  
+
+
+
+  
+
+
+
+What variable(s) should be removed from the input data because they are neither targets nor features? 
+    *Original model we removed EIN number and Name, but in optimization 2 we only get rid of EIN number
+ 
+  
+   
+  
+
 
 
 Compiling, Training, and Evaluating the Model
 
+
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
+    * Originally we went with 2 layers but when we optimize we did 3. Nodes we did 80 and 30 for the original one. For the final optimization, we did 3 layers with 7, 14, and 21 nodes. 
+  
+
+
+
+  
+
 Were you able to achieve the target model performance?
+* On the final optimization, we got up to 78%
+
+
+
+
 What steps did you take in your attempts to increase model performance?
+* In the first optimization, we added another neuron and more epochs. On the second optimization, we used the name as a feature and did not drop it which helped it achieve 78%
+  
+
+
+
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+
+
+* Several layers should be considered, so it can continue to predict and classify information based on the model.
